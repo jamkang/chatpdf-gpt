@@ -76,19 +76,19 @@ export default function CredentialsPage() {
 
 
 
-  const handleSaveCredentials = () => {
-    setAndSaveCookieValue({
-      openaiApiKey,
-      pineconeEnvironment,
-      pineconeIndex,
-      pineconeApiKey,
-      supabaseKey,
-      supabaseUrl,
-      supabaseBucket,
-      supabaseDatabaseUrl,
-      supabaseDirectUrl,
-    })
-  }
+  // const handleSaveCredentials = () => {
+  //   setAndSaveCookieValue({
+  //     openaiApiKey,
+  //     pineconeEnvironment,
+  //     pineconeIndex,
+  //     pineconeApiKey,
+  //     supabaseKey,
+  //     supabaseUrl,
+  //     supabaseBucket,
+  //     supabaseDatabaseUrl,
+  //     supabaseDirectUrl,
+  //   })
+  // }
 
   return (
     <>
@@ -231,9 +231,9 @@ export default function CredentialsPage() {
                   />
                 </div>
               </div>
-              <DialogPrimitive.Close asChild>
+              {/* <DialogPrimitive.Close asChild>
                 <Button onClick={handleSaveCredentials}>Save changes</Button>
-              </DialogPrimitive.Close>
+              </DialogPrimitive.Close> */}
             </DialogContent>
           </Dialog>
 
